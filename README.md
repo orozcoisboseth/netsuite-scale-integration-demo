@@ -31,3 +31,8 @@ src/
  ├─ adapters/
  ├─ lib/
  └─ mock/
+
+## Disclaimer
+This repository contains demo code created from scratch.
+It does not include configurations, business rules, logic,
+or proprietary information from any current or previous employer.
