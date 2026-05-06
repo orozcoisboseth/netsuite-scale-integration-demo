@@ -4,7 +4,17 @@
  * Simulates communication with an external scale API.
  */
 
-define([], function () {
+(function (root, factory) {
+
+    if (typeof define === 'function') {
+        // NetSuite (SuiteScript AMD)
+        define([], factory);
+    } else if (typeof module === 'object' && module.exports) {
+        // Node.js (local testing)
+        module.exports = factory();
+    }
+
+}(this, function () {
 
     function getWeight() {
         return {
@@ -18,4 +28,4 @@ define([], function () {
     return {
         getWeight: getWeight
     };
-});
+}));
