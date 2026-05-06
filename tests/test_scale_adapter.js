@@ -1,6 +1,6 @@
 
 // Simple local test for the scale adapter
-const scaleAdapter = require('../src/adapters/scale_api_adapter_mock');
+const scaleAdapter = require('../src/adapters/scale_api_adapter');
 
 function testGetWeight() {
   const result = scaleAdapter.getWeight();
